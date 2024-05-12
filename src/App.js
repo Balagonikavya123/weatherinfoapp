@@ -50,7 +50,7 @@ function App() {
   }
   window.onload = async () =>{
     try{
-        const fetched = await fetch(`${api.baseUrl}?Key=${api.key}&q=guntur`,{mode:"cors"})
+        const fetched = await fetch(`${api.baseUrl}?Key=${api.key}&q=kochi`,{mode:"cors"})
         const res = await fetched.json()
         requiredData(res)
     }catch(err){
